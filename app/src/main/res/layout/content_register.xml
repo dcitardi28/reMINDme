@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dan.remindme.Register"
+    tools:showIn="@layout/activity_register">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/lastname"
+            android:layout_weight="3.44"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/firstname"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-60dp" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/firstname"
+            android:layout_weight="3.53"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/lastname"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/lastname"
+            android:layout_weight="3.53"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/questions_spinner"
+            android:layout_alignLeft="@+id/confirmpassword"
+            android:layout_alignStart="@+id/confirmpassword"
+            android:layout_weight="3.53"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints,UnknownId"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <EditText
+            android:id="@+id/passwordconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="3.53"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/passwordconfirm"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <Spinner
+            android:id="@+id/questions_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="3.53"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <EditText
+            android:id="@+id/securityanswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3.53"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/securityanswer"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+        <CheckBox
+            android:id="@+id/caregiverCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.53"
+            android:text="Check if Caregiver"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.53"
+            android:onClick="getNotification"
+            android:text="Register"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="462dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
